@@ -3,6 +3,7 @@ import Layout from "@layouts/Layout.astro";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Socials from "../components/Socials";
+import LinkButton from "../components/LinkButton";
 import { SOCIALS } from "@config";
 
 const socialCount = SOCIALS.filter(social => social.active).length;
@@ -12,30 +13,44 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <Header />
   <main id="main-content">
     <section id="hero">
-      <h1>Hi, I'm Nipun</h1>
+      <h1>👋 Hi, I'm Nipun</h1>
       <p>
-        <!-- A tech enthusiast living the dream of a full time software engineer who
-        began the journey as a freelance designer. Passionate about designing
-        and building digital products, Apps, APIs, and UI designs, while
-        prioritizing maintaining a clean and efficient codebase. I am also
-        passionate about exploring cloud solutions, and mobile application
-        development, and continually improving my experience. -->
         A tech enthusiast living the dream of a full-time software engineer with
-        a passion for designing and building digital products. My diverse background
-        includes roles such as Associate technical lead, Full stack software engineer
-        and UI/UX designer. I'm spezalied in full stack development as well as mobile
-        app development with over 5 years of experience. With the background as a
-        UI/UX designer, I understands the importance of prioritizing user experience
-        and quality of the product while maintaining and delivering clean and efficient
-        codebase.
+        a passion for designing and engineering digital products. My diverse
+        background includes roles such as Associate technical lead, Full stack
+        software engineer and UI/UX designer. I'm spezalied in full stack
+        development as well as mobile app development with over 5 years of
+        experience.I like to craft solid and scalable products with great user
+        experiences. With the background as a UI/UX designer, I understands the
+        importance of prioritizing user experience and quality of the product
+        while maintaining and delivering clean and efficient codebase.
         <br />
         <br />
         I graduated with a BSc (Hons) in Computer Science and Software Engineering
-        from the University of bedfordshire. with my skill set I've deliverd over
-        6 products to international market sunch as app store as well as
+        from the University of bedfordshire. with my skill set I've built products
+        for companies and businesses around the globe ranging from marketing websites
+        to complex solutions and enterprise apps with focus on fast, elegant and
+        accessible user experiences.
+        <br />
+        <br />
+        When I'm not at the computer, I'm usually hanging out with my friends, playing
+        games or dreaming.
+        <br />
+        <br />
+        <LinkButton
+          className="font-bold"
+          href={"../assets/Resume-NipunKalansuriya.pdf"}
+          download="Resume-NipunKalansuriya.pdf"
+          title={"Click here to download my CV"}
+        >
+          <span class="border-b-2 decoration-wavy"
+            >Click here to download my CV 📑</span
+          >
+        </LinkButton>
+        <br />
+        <br />
       </p>
       {
-        // only display if at least one social link is enabled
         socialCount > 0 && (
           <div class="social-wrapper">
             <div class="social-links">Social Links:</div>

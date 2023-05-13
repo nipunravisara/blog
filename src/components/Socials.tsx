@@ -17,7 +17,7 @@ function Socials(props: Props) {
         <LinkButton
           key={social.name}
           href={social.href}
-          className="link-button"
+          className="link-button px-1.5"
           title={social.linkTitle}
         >
           <span
