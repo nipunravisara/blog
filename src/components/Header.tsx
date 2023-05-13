@@ -19,14 +19,17 @@ function Header({ activeNav }: Props) {
       <div className="@apply mx-auto flex max-w-3xl flex-col items-center justify-between sm:flex-row">
         <div className="@apply relative flex w-full items-start justify-between p-4 sm:items-center sm:py-8">
           <a
-            href="/"
+            href="/bloghive/"
             className="@apply py-1 text-xl font-semibold sm:static sm:text-2xl"
           >
             {SITE.title}
           </a>
           <ul id="menu-items" className="display-none sm:flex">
             <li className="px-5">
-              <a href="/me" className={activeNav === "posts" ? "active" : ""}>
+              <a
+                href="/bloghive/me"
+                className={activeNav === "posts" ? "active" : ""}
+              >
                 About
               </a>
             </li>
